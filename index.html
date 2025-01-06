@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and External JavaScript Example</title>
+
+    <!-- External JavaScript file -->
+    <script src="external.js" defer></script>
+
+    <script>
+        // Inline JavaScript
+        function greetUser(name) {
+            alert("Hello, " + name + "! This is inline JavaScript.");
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Inline and External JavaScript Example</h1>
+
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="greetUser(document.getElementById('username').value)">Greet (Inline)</button>
+
+    <button onclick="externalFunction()">Greet (External)</button>
+
+</body>
+</html>
