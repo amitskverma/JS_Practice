@@ -16,3 +16,10 @@ const add = function(a,b,callback){
 
 
 add(2,3,callback);
+
+
+
+add(2,3,()=>console.log('<---result'))
+
+
+add(2,3,function(){console.log('----<---result')})
